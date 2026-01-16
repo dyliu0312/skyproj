@@ -810,7 +810,8 @@ class _Skyproj():
                                                              lon_range,
                                                              lat_range,
                                                              nest=nest,
-                                                             xsize=xsize)
+                                                             xsize=xsize,
+                                                             aspect=aspect,)
 
         if isinstance(norm, str):
             _vmin, _vmax = get_autoscale_vmin_vmax(
@@ -889,6 +890,7 @@ class _Skyproj():
             values,
             nest=nest,
             xsize=xsize,
+            aspect=aspect,
             lon_range=lon_range,
             lat_range=lat_range
         )
@@ -972,6 +974,7 @@ class _Skyproj():
                                                              lon_range,
                                                              lat_range,
                                                              xsize=xsize,
+                                                             aspect=1,
                                                              valid_mask=valid_mask)
 
         if isinstance(norm, str):
